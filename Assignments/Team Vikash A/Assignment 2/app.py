@@ -64,7 +64,7 @@ def list():
     dictionary = ibm_db.fetch_both(stmt)
 
   if students:
-    return render_template("list.html", students = students)
+     return render_template("list.html", students = students)
 
 @app.route('/delete/<name>')
 def delete(name):
