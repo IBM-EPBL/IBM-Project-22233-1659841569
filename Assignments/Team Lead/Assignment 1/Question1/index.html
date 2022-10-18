@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple Reistration Form</title>
+   
+</head>
+
+<body>
+    <form method="POST" action="http://127.0.0.1:5000/login">
+        <div class="container">
+            <h1>Sign Up</h1>
+            <p>Please fill in this form to create an account.</p>
+
+            <label><b>Username</b></label>
+            <input type="text" name="name" placeholder="Enter Username" required><br>
+            <label><b>Email</b></label>
+            <input type="email" placeholder="Enter Email" name="email" required><br>
+
+            <label><b>Phone Number</b></label>
+            <input type="phone" name="mobile" placeholder="xxxxxxxxxx" required>
+            <div class="clearfix">
+                <button type="submit" class="btn">Sign Up</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
