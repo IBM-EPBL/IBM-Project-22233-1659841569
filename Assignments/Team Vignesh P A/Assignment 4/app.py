@@ -15,7 +15,7 @@ def create():
             flash('Content is required!')
         else:
             messages.append({'title': title, 'content': content})
-            name = "Shyam Mohan"
+            name = "Vignesh"
             return redirect(url_for('index', messages=name ))
 
     return render_template('create.html')
