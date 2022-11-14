@@ -40,23 +40,38 @@ Team Vikash A
 Team Thanush Kumar
 
 Project Design & Planning
+
 Ideation Phase
+
 Project Design Phase 1
+
 Project Design Phase II
+
 Project Planning
+
 
 Status :
 
 Ideation Phase - Done
+
 Problem Statement - Done
+
 Project Design Phase I - Done
+
 Project Design Phase II - Done
-Project Planning - 
+
+Project Planning -
+
 Sprint 1 -
+
 Sprint 2 -
+
 Sprint 3 -
+
 Sprint 4 -
+
 Tech Stack
+
 Frontend: Html+CSS+JavaScript
 
 Backend: Python, Flask , Docker
@@ -64,6 +79,7 @@ Backend: Python, Flask , Docker
 Database: IBM DB2
 
 Feedback
+
 If you have any feedback, please reach out to us at vigneshpa30@gmail.com
 
 Thank You
