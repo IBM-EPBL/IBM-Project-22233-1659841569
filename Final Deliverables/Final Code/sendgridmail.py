@@ -1,17 +1,17 @@
 import os
-from dotenv import load_dotenv
-
-load_dotenv()
 from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import Mail
 
-def sendmail(usermail,subject,content):
-    message = Mail(from_email='410619104029@smartinternz.com',to_emails=usermail,subject=subject,html_content='<strong> {} </strong>'.format(content))
-    try:
-        sg = SendGridAPIClient(os.getenv('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'))
-        response = sg.send(message)
-        print(response.status_code)
-        print(response.body)
-        print(response.headers)
-    except Exception as e:
-        print(e.message)
+message = Mail(
+    from_email="from_email@your-whitelisted-domain.com",
+    to_emails=("request.form['email']"),
+    subject="Dear %Name%, A patient needs your help, please donate plasma if you can. Regards Team PlasmaDrop",
+    html_content="<strong>and easy to do anywhere, even with Python</strong>")
+try:
+    sg = SendGridAPIClient('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')
+    response = sg.send(message)
+    print(response.status_code)
+    print(response.body)
+    print(response.headers)
+except Exception as e:
+    print(e.message)
